@@ -1,0 +1,217 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.topNav {
+    background-image: url(../images/banner.jpg);
+    background-size: contain;
+    height: 350px;
+    position: relative;
+}
+
+.bannerTitle {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    bottom: 46%;
+    left: 50px;
+}
+
+.navBar {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+}
+
+.navBar span {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navBar a.active {
+    color: red;
+}
+
+.navBar a:hover {
+    color: #4880ff;
+}
+
+.main {
+    padding: 30px;
+    color: black;
+    font-size: 18px;
+    min-height: 600px;
+}
+
+.topRow {
+    position: relative;
+}
+
+.currentDate {
+    position: absolute;
+    right: 40px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.main li {
+    margin: 20px;
+}
+
+.changeStyleBtn, .animateBtn, .showPopupBtn {
+    margin-bottom: 30px;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background: yellowgreen;
+    border-radius: 0%;
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+.animateBox {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    opacity: 0.5;
+    background: red;
+}
+
+#customPopup {
+    width: 800px;
+    height: 400px;
+    background-color: rgba(23, 23, 23, 0.95);
+    color: white;
+    position: relative;
+    padding: 20px;
+    padding-top: 80px;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: none;
+}
+
+#customPopup span {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-weight: bold;
+    cursor: pointer;
+} 
+
+hr {
+    height: 1px;
+    background-color: red;
+    border: none;
+    margin-top: 30px;
+}
+
+.nextTask {
+    margin-top: 30px;
+}
+
+.products .active {
+    background-color: violet;
+}
+
+.accordionGroup {
+    width: 75%;
+    margin: 20px auto;
+}
+.accordion {
+    margin-bottom: 20px;
+}
+.question {
+    height: auto;
+    padding: 10px 50px 10px 20px;
+    font-weight: bold;
+    background-color: #123456;
+    color: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+}
+.plus, .minus {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.accordion .plus {
+    display: block;
+}
+.accordion .minus {
+    display: none;
+}
+.accordion.active .plus {
+    display: none;
+}
+.accordion.active .minus {
+    display: block;
+}
+.answer {
+    max-height: 0px;
+    padding: 0px;
+    background-color: #f1f1f1;
+    color: #123456;
+    overflow: hidden;  
+    transition: max-height 0s ease-in;        
+}
+.accordion.active .answer {
+    max-height: 3000px;
+    padding: 10px 20px;
+    transition: max-height 2s ease-in;
+}
+
+.rating {
+    margin: 50px auto;
+    width: 50%;
+}
+
+.query {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.choices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+button {
+    min-width: 100px;
+}
+
+.yourChoice {
+    text-align: center;
+}
+
+.footer {
+    color: #fff;
+    background-color: #05306b;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,41 @@
+.topNav {
+    background-image: url(../images/banner.jpg);
+    background-size: contain;
+    height: 350px;
+    position: relative;
+  }
+  .bannerTitle {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    bottom: 46%;
+    left: 50px;
+}
+
+.navBar {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+}
+  .navBar span {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  
+  .navBar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navBar a.active{
+    color: red;
+  }
+  
+  .navBar a:hover {
+    color: #4880ff;
+  }
+  

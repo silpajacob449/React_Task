@@ -1,13 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+.fade.shadow-lg.border.modal.show {
+  opacity: 1;
+}
+.modal-dialog.modal-md.modal-dialog-centered {
+  transform: translateY(-50%);
+  top: 50%;
+  
+}
+.accordion .accordion-item .title {
+  height: auto;
+  padding: 10px 50px 10px 20px;
+  font-weight: bold;
+  background-color: #123456 !important;
+  color: #f1f1f1 !important;
+  cursor: pointer;
+  position: relative;
+  margin-top: 10;
+  border-radius: 0 !important;
+}
+
+.accordion .accordion-item.active .panel {
+  background-color: #f1f1f1;
+  box-shadow: none;
+  border: none;
+}
+
+.accordion {
+  margin: 100px auto 0 !important;
+  border: none;
+}
+
+.accordion .accordion-item .panel {
+  margin: 0;
+}
+.accordion:after{
+  display:none !important;
+}
+.accordion .accordion-item .title:after{
+  content:"+ " !important;
+  font-size:30px !important;
+  color:#fff !important;
+
+}
+ul.products li[data-val="true"] {
+  background: violet;
 }

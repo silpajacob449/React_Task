@@ -1,0 +1,8 @@
+.box {
+    transition: all 300ms;
+}
+
+.box.isActive {
+    height: 100px;
+    width: 100px;
+}
